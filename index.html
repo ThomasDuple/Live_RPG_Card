@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live RPG Card Maker</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="./script.js" defer></script>
+</head>
+<body spellcheck=false>
+  <main id="content">
+    <div class="b-infos">
+      <div class="icon-wrapper">
+        <span class="info-icon" contenteditable="true">😐</span>
+      </div>
+      <div class="info-txt">
+        <span id="name" class="info-name" contenteditable="true">Nom</span>
+        <span class="info-title" contenteditable="true">Classe</span>
+      </div>
+    </div>
+    <div>
+      <div type="text" class="desc" contenteditable="true">Description du personnage</div>
+    </div>
+    <div class="b-level">
+      <span class="lvl-nb" contenteditable="true">50</span>
+      <div class="lvl-progress">
+        <div class="lvl-txt">
+          <span class="lvl-title">Niveau</span>
+          <div class="lvl-perc">
+          <span id="lvl-perc-nb">50</span>
+          <span>%</span>
+          </div>
+        </div>
+        <div class="progress" data-value=50 data-max=100>
+          <div class="progress-inner"></div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="b-stats">
+      <span class="st-yellow stat-icon">💪</span>
+      <span class="st-yellow stat-name">Force</span>
+      <div class="progress st-yellow" data-value="5" data-max="10">
+        <div class="progress-inner"></div>
+      </div>
+
+      <span class="st-pink stat-icon">🧠</span>
+      <span class="st-pink stat-name">Intelligence</span>
+      <div class="progress st-pink" data-value="5" data-max="10">
+        <div class="progress-inner"></div>
+      </div>
+
+      <span class="st-red stat-icon">👄</span>
+      <span class="st-red stat-name">Charisme</span>
+      <div class="progress st-red" data-value="5" data-max="10">
+        <div class="progress-inner"></div>
+      </div>
+
+      <span class="st-green stat-icon">🍀</span>
+      <span class="st-green stat-name">Chance</span>
+      <div class="progress st-green" data-value="5" data-max="10">
+        <div class="progress-inner"></div>
+      </div>
+
+      <span class="st-purple stat-icon">💜</span>
+      <span class="st-purple stat-name">Résistance</span>
+      <div class="progress st-purple" data-value="5" data-max="10">
+        <div class="progress-inner"></div>
+      </div>
+
+      <span class="st-orange stat-icon">🔥</span>
+      <span class="st-orange stat-name">Volonté</span>
+      <div class="progress st-orange" data-value="5" data-max="10">
+        <div class="progress-inner"></div>
+      </div>
+
+      <span class="st-gray stat-icon">💨</span>
+      <span class="st-gray stat-name">Agilité</span>
+      <div class="progress st-gray" data-value="5" data-max="10">
+        <div class="progress-inner"></div>
+      </div>
+    </div>
+  </main>
+  <button id="download">Télécharger ⇓</button>
+</body>
+</html>
